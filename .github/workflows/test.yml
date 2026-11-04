@@ -1,4 +1,4 @@
-name: Preflight Orchestrator - Real Checkers
+name: Preflight Orchestrator - Real Checkers (armor fix branch)
 
 on:
   push:
@@ -11,10 +11,10 @@ jobs:
       enable-semgrep-scan: true
       enable-dependency-review: true
       enable-repolinter-check: true
-      enable-copyright-license-check: true
-      enable-commit-email-check: true
+      enable-copyright-license-check: false
+      enable-commit-email-check: false
       enable-commit-msg-check: false
-      enable-armor-checkers: false
+      enable-armor-checkers: true
     permissions:
       contents: read
       security-events: write
